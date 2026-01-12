@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-accent: #DA9687;
+  --primary-accent-hover: #c48679;
+  --sacred-gold: #9f7a2f;
+  --sacred-gold-hover: #8c6b28;
+  --mystic-dark: #514B60;
+  --mystic-dark-hover: #423d4f;
+
+  --bg-soft: #F9F9F9;
+  --bg-cream: #faebd7;
+  --text-dark: #1a1a1a;
+  --text-muted: #666666;
+  --border-color: #eeeeee;
+
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-dark);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-cream);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utilities */
+.text-accent {
+  color: var(--primary-accent);
+}
+
+.text-gold {
+  color: var(--sacred-gold);
+}
+
+.bg-accent {
+  background-color: var(--primary-accent);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: var(--mystic-dark);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--mystic-dark-hover);
+}
+
+.btn-cta {
+  background-color: var(--sacred-gold);
+  color: white;
+}
+
+.btn-cta:hover {
+  background-color: var(--sacred-gold-hover);
+}
